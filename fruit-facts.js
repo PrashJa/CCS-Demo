@@ -52,6 +52,120 @@ const FRUIT_FACTS = {
       "Supports skin health"
     ],
     season: "Peak season from November to March"
+  },
+  apple_smoothie: {
+    nutrition: {
+      calories: "120 kcal",
+      fiber: "3.2g",
+      vitamin_c: "18% DV",
+      protein: "2.1g"
+    },
+    facts: [
+      "Smoothies retain more nutrients than juicing",
+      "Apple smoothies are great for pre-workout energy",
+      "The fiber in apples helps slow sugar absorption"
+    ],
+    benefits: [
+      "Quick and convenient nutrition",
+      "Supports digestive health",
+      "Great source of natural energy"
+    ],
+    season: "Available year-round"
+  },
+  banana_smoothie: {
+    nutrition: {
+      calories: "150 kcal",
+      fiber: "2.8g",
+      potassium: "380mg",
+      protein: "3.2g"
+    },
+    facts: [
+      "Banana smoothies are perfect post-workout recovery drinks",
+      "The natural sugars provide quick energy",
+      "Bananas help thicken smoothies naturally"
+    ],
+    benefits: [
+      "Excellent for muscle recovery",
+      "Supports heart health",
+      "Natural energy boost"
+    ],
+    season: "Available year-round"
+  },
+  lemon_smoothie: {
+    nutrition: {
+      calories: "45 kcal",
+      fiber: "1.8g",
+      vitamin_c: "65% DV",
+      protein: "1.2g"
+    },
+    facts: [
+      "Lemon smoothies are incredibly refreshing",
+      "Perfect for detox and cleansing",
+      "The acidity helps with digestion"
+    ],
+    benefits: [
+      "Boosts immune system",
+      "Aids in detoxification",
+      "Supports healthy skin"
+    ],
+    season: "Available year-round"
+  },
+  tropical_smoothie: {
+    nutrition: {
+      calories: "180 kcal",
+      fiber: "4.2g",
+      vitamin_c: "45% DV",
+      protein: "2.8g"
+    },
+    facts: [
+      "Tropical smoothies combine multiple fruit benefits",
+      "Perfect for summer refreshment",
+      "The combination provides balanced nutrition"
+    ],
+    benefits: [
+      "Rich in multiple vitamins",
+      "Supports immune system",
+      "Great for hydration"
+    ],
+    season: "Available year-round"
+  },
+  green_smoothie: {
+    nutrition: {
+      calories: "110 kcal",
+      fiber: "5.1g",
+      vitamin_c: "35% DV",
+      protein: "2.5g"
+    },
+    facts: [
+      "Green smoothies pack maximum nutrition",
+      "Perfect way to get your daily greens",
+      "The apple and banana balance the green taste"
+    ],
+    benefits: [
+      "Maximum nutrient density",
+      "Supports overall health",
+      "Great for weight management"
+    ],
+    season: "Available year-round"
+  },
+  citrus_smoothie: {
+    nutrition: {
+      calories: "85 kcal",
+      fiber: "3.8g",
+      vitamin_c: "70% DV",
+      protein: "1.8g"
+    },
+    facts: [
+      "Citrus smoothies are vitamin C powerhouses",
+      "Perfect for morning energy",
+      "The combination is naturally sweet"
+    ],
+    benefits: [
+      "Immune system support",
+      "Antioxidant rich",
+      "Supports collagen production"
+    ],
+    season: "Available year-round"
   }
 };
 
@@ -87,6 +201,12 @@ function createFactsSection(fruit) {
               <span class="nutrition-label">Potassium</span>
             </div>
           `}
+          ${facts.nutrition.protein ? `
+            <div class="nutrition-item">
+              <span class="nutrition-value">${facts.nutrition.protein}</span>
+              <span class="nutrition-label">Protein</span>
+            </div>
+          ` : ''}
         </div>
       </div>
 
