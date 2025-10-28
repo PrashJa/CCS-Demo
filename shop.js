@@ -2,6 +2,12 @@ const PRODUCTS = {
   apple: { name: "Apple", emoji: "🍏" },
   banana: { name: "Banana", emoji: "🍌" },
   lemon: { name: "Lemon", emoji: "🍋" },
+  apple_smoothie: { name: "Apple Smoothie", emoji: "🥤🍏" },
+  banana_smoothie: { name: "Banana Smoothie", emoji: "🥤🍌" },
+  lemon_smoothie: { name: "Lemon Smoothie", emoji: "🥤🍋" },
+  tropical_smoothie: { name: "Tropical Smoothie", emoji: "🥤🍌🍋" },
+  green_smoothie: { name: "Green Smoothie", emoji: "🥤🍏🍌" },
+  citrus_smoothie: { name: "Citrus Smoothie", emoji: "🥤🍋🍏" },
 };
 
 const BUNDLES = {
@@ -24,6 +30,21 @@ const BUNDLES = {
     name: "Fruit Feast",
     products: ["apple", "banana", "lemon"],
     emoji: "🍏🍌🍋"
+  },
+  smoothie_pack: {
+    name: "Smoothie Pack",
+    products: ["apple_smoothie", "banana_smoothie", "lemon_smoothie"],
+    emoji: "🥤🍏🥤🍌🥤🍋"
+  },
+  tropical_smoothie_bundle: {
+    name: "Tropical Smoothie Bundle",
+    products: ["tropical_smoothie", "citrus_smoothie"],
+    emoji: "🥤🍌🍋🥤🍋🍏"
+  },
+  green_health_bundle: {
+    name: "Green Health Bundle",
+    products: ["green_smoothie", "apple", "banana"],
+    emoji: "🥤🍏🍌🍏🍌"
   }
 };
 
