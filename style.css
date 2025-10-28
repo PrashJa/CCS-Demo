@@ -146,6 +146,33 @@ input[type="text"]:focus {
   vertical-align: middle;
   display: block;
 }
+.welcome-section {
+  text-align: center;
+  margin: 2rem auto;
+  padding: 2rem;
+  background: linear-gradient(135deg, #e8f5e8 0%, #f0f8f0 100%);
+  border-radius: 20px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+  max-width: 800px;
+  border: 2px solid #4CAF50;
+}
+
+.welcome-title {
+  font-size: 2.5rem;
+  color: #2e7d32;
+  margin: 0 0 1rem 0;
+  font-weight: 700;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.welcome-text {
+  font-size: 1.3rem;
+  color: #388e3c;
+  line-height: 1.6;
+  margin: 0;
+  font-weight: 500;
+}
+
 .products-title {
   text-align: center;
   font-size: 2rem;
@@ -789,6 +816,16 @@ input[type="text"]:focus {
   .quiz-promo p,
   .bundles-promo p {
     font-size: 1rem;
+  }
+  .welcome-section {
+    margin: 1.5rem auto;
+    padding: 1.5rem;
+  }
+  .welcome-title {
+    font-size: 2rem;
+  }
+  .welcome-text {
+    font-size: 1.1rem;
   }
 }
 
